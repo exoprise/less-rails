@@ -1,5 +1,23 @@
 # CHANGELOG
 
+### 4.0.0 - 2018-10-31
+
+* The import scanner now takes into account multiple [import options](http://lesscss.org/features/#import-atrules-feature-import-options).
+* Removed Tilt and Grease as dependencies.
+* **Breaking Change**: If you are requiring your less files using the extension, e.g:
+  `*= require semantic_ui/definitions/modules/accordion.less`
+  you need to remove the extension like so:
+  `*= require semantic_ui/definitions/modules/accordion`
+
+### 3.0.0 - 2017-10-02
+
+* Solve deprecation warning via Grease adapter!
+
+### 2.8.0 - 2016-10-12
+
+* Make it possible to pass parameters to less.rb
+  Fixes https://github.com/metaskills/less-rails/issues/94
+
 ### 2.7.1 - 2016-09-01
 
 * Fix Sprockets 3 integration. Thanks @suzan2go and @ccallebs!

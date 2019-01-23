@@ -8,7 +8,7 @@
 #test-mixin span { .bordered; }
 
 // Frameworks
-@import "frameworks/bootstrap/mixins";
+@import (multiple) "frameworks/bootstrap/mixins";
 #test-radiused { .radiused; }
 #test-variable-colored { .variableColored; }
 #test-variable-relative-path-colored { .variableRelativePathColored; }
@@ -16,3 +16,5 @@
 // Vendored
 @import "vendored";
 #test-vendored { .vendored; }
+
+@import "frameworks/bootstrap/relative_path_url";
